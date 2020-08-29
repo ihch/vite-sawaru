@@ -14,15 +14,15 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-vue": "^7.0.0-beta.3",
-    "hasky": "^3.0.2",
-    "lint-staged": "^10.2.13",
+    "husky": "^4.2.5",
     "prettier": "^2.1.1",
+    "pretty-quick": "^3.0.0",
     "pug": "^3.0.0",
     "vite": "^1.0.0-rc.1"
   },
-  "hasky": {
+  "husky": {
     "hooks": {
-      "pre-commit": "lint-staged --nostash"
+      "pre-commit": "pretty-quick --staged"
     }
   }
 }
